@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderLogo from './header-logo';
+import { UserButton } from "@clerk/nextjs";
 // justify-center
 function Header() {
     return (
@@ -8,6 +9,7 @@ function Header() {
                 <div className='w-full flex items-center mb-14'>
                     <div className='flex items-center lg:gap-x-16'>
                         <HeaderLogo/>
+                        <UserButton afterSignOutUrl="/" />
                     </div>
                 </div>
             </div>
